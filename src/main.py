@@ -1,3 +1,5 @@
-import sys
+import os
 
-print('Hello ' + sys.argv[1])
+# Read env variable
+env_var = os.environ.get('INPUT_WHO-TO-GREET')
+print('Hello ' + env_var)
