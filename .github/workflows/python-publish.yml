@@ -1,0 +1,13 @@
+name: Code Review
+on:
+  push:
+permissions:
+  contents: read
+
+jobs:
+  code-review:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: OpenAI Code Reviewer - Azure
+      uses: alexjose/openai-code-review@v0.0.1-alpha.2
