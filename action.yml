@@ -1,5 +1,5 @@
 # action.yml
-name: 'Hello World'
+name: 'OpenAI Code Reviewer - Azure'
 description: 'Greet someone and record the time'
 inputs:
   who-to-greet:  # id of input
