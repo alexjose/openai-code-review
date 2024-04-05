@@ -11,10 +11,6 @@ client = AzureOpenAI(
 
 )
 
-# Read env variable
-env_var = os.environ.get('INPUT_WHO-TO-GREET')
-print('Hello ' + env_var)
-
 message_text = [{"role":"system","content":"You are an AI assistant that helps people find information."}]
 
 
