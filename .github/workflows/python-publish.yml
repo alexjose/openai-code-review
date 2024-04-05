@@ -10,4 +10,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: OpenAI Code Reviewer - Azure
-      uses: alexjose/openai-code-review@v0.0.1-alpha.2
+      uses: alexjose/openai-code-review@v1-beta
