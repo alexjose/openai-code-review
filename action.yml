@@ -5,15 +5,14 @@ branding:
   icon: 'activity'
   color: 'green'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  openai-api-key:  # id of input
+    description: 'OpenAI API Key'
     required: true
-    default: 'World'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
+  env:
+    OPENAI_API_KEY: ${{ inputs.openai-api-key }}
